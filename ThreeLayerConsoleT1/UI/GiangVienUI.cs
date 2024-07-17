@@ -1,4 +1,5 @@
 ﻿using System;
+using ThreeLayerConsoleT1.BUS.Implement;
 using ThreeLayerConsoleT1.BUS.Interface;
 using ThreeLayerConsoleT1.BUS.ViewModel;
 
@@ -8,9 +9,9 @@ namespace ThreeLayerConsoleT1.PL.UI
     {
         private readonly IGiangVienService _giangVienService;
 
-        public GiangVienUI(IGiangVienService giangVienService)
+        public GiangVienUI()
         {
-            _giangVienService = giangVienService;
+            _giangVienService = new GiangVienService();
         }
         public void Menu()
         {
